@@ -1,0 +1,81 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": false,
+      "arrow-body-style": ["error", "as-needed"],
+      "arrow-parens": ["error", "always"],
+      "arrow-spacing": "error",
+      "camelcase": "error",
+      "comma-dangle": ["error", "always-multiline"],
+      "curly": "error",
+      "default-case": "error",
+      "dot-notation": "warn",
+      "eqeqeq": "error",
+      "max-len": [
+        "warn",
+        {
+          "code": 180,
+          "ignoreUrls": true,
+          "ignoreRegExpLiterals": true
+        }
+      ],
+      "newline-per-chained-call": "off",
+      "no-alert": "warn",
+      "no-confusing-arrow": "off",
+      "no-console": "warn",
+      "no-duplicate-imports": ["error", { "includeExports": true }],
+      "no-else-return": "error",
+      "no-eq-null": "error",
+      "no-extra-bind": "error",
+      "no-lone-blocks": "error",
+      "no-multiple-empty-lines": ["error"],
+      "no-nested-ternary": ["error"],
+      "no-param-reassign": "error",
+      "no-return-assign": "error",
+      "no-return-await": "error",
+      "no-self-compare": "error",
+      "no-template-curly-in-string": "error",
+      "no-underscore-dangle": ["warn", { "allowAfterSuper": true, "enforceInMethodNames": true }],
+      "no-useless-concat": "error",
+      "no-useless-constructor": "error",
+      "no-useless-escape": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-promise-reject-errors": "error",
+      "prefer-template": "error",
+      "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 120,
+          "tabWidth": 2,
+          "singleQuote": true,
+          "trailingComma": "all",
+          "arrowParens": "always"
+        }
+      ],
+      "require-await": "error",
+      "spaced-comment": "error",
+      "symbol-description": "error",
+    }
+}
