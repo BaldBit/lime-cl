@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<styled.button
+  disabled={false}
+  fluid={false}
+  mode="primary"
+  onClick={[Function]}
+  size="regular"
+>
+  button
+</styled.button>
+`;
