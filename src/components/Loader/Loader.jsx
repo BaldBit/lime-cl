@@ -12,9 +12,21 @@ const Loader = (props) => {
 };
 
 Loader.propTypes = {
+  /**
+   * @property {string} [size=regular] - Set the size of the Loader component
+   */
   size: PropTypes.oneOf(['regular', 'big']),
+  /**
+   * @property {number} speed - Set the animation speed
+   */
   speed: PropTypes.number,
+  /**
+   * @property {number} thickness - Set the thickness of the Loader component
+   */
   thickness: PropTypes.number,
+  /**
+   * @property {string} color - Set the color of the spinning circle
+   */
   color: PropTypes.string,
 };
 

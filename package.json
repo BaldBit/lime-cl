@@ -17,6 +17,7 @@
     "storybook": "start-storybook --ci --quiet -p 6006"
   },
   "pre-commit": [
+    "test",
     "build"
   ],
   "eslintConfig": {
