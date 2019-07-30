@@ -11,6 +11,7 @@ function loadStories() {
 addParameters({
   options: {
     theme: themes.light,
+    panelPosition: 'right',
   },
 });
 
@@ -18,6 +19,6 @@ addDecorator(
   withInfo({
     inline: true,
   })
-);
+  );
 
-configure(loadStories, module);
+  configure(loadStories, module);

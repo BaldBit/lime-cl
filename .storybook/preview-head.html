@@ -1,0 +1,111 @@
+<style>
+    :root {
+      --color-primary-one: #2ace7e;
+      --color-secondary-one: #21cddb;
+
+      --color-gray-medium: #A1A1A1;
+      --color-gray-light: #E4E5E6;
+
+      --color-light: #fff;
+      --color-dark: #000;
+    }
+
+    #root > div > div:first-child > div {
+      padding: 0 40px !important;
+      margin: 0;
+      border: 0 !important;
+    }
+
+    #root > div > div:first-child > div > div {
+      border-bottom: 0 !important;
+    }
+
+    #root > div > div:first-child > div h1 {
+      color: var(--color-primary-one);
+      font-size: 35px !important;
+      line-height: 1;
+    }
+
+    #root > div > div:first-child > div h2 {
+      font-weight: 300!important;
+      margin: 5px 0 0 0 !important;
+      border-bottom: 0;
+      line-height: 22px;
+      border-radius: 5px;
+      color: var(--color-primary-one);
+      font-size: 22px !important;
+    }
+
+    #root > div > div:first-child > div h2:after {
+      content: '';
+      height: 4px;
+      display: block;
+      background: linear-gradient(90deg, var(--color-primary-one) 0%, var(--color-secondary-one) 100%);
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+
+    #story-root {
+      margin: 50px 40px;
+      padding: 20px;
+      border: 1px solid var(--color-gray-light);
+      border-radius: 20px;
+    }
+
+    #root > div > div:last-child > div {
+      padding: 0 40px !important;
+      margin: 0;
+      border: 0!important;
+    }
+
+    #root > div > div:last-child > div > div {
+      padding: 20px;
+      border: 1px solid var(--color-gray-light) !important;
+      margin-bottom: 25px;
+      border-radius: 20px;
+    }
+
+    #root > div > div:last-child > div > div:empty {
+      display: none;
+    }
+
+    #root > div > div:last-child > div h1 {
+      color: var(--color-primary-one);
+      font-weight: 300!important;
+      border: 0 !important;
+      font-size: 20px !important;
+      line-height: 20px;
+      margin-top: 10px !important;
+    }
+
+    #root > div > div:last-child > div pre {
+      overflow: auto !important;
+    }
+
+    #root > div > div:last-child > div h3 {
+
+    }
+
+    #root > div > div:last-child .info-table {
+      margin-top: 5px !important;
+      border: 0;
+    }
+
+    #root > div > div:last-child .info-table th {
+      background: var(--color-secondary-one);
+      color: #fff;
+      font-weight: 300;
+      border: 0;
+      text-transform: capitalize;
+      padding: 0.6rem 0.25rem;
+    }
+
+    #root > div > div:last-child .info-table td {
+      border: 0;
+      padding: 0.6rem 0.25rem;
+    }
+
+    #root > div > div:last-child .info-table tr:nth-child(2n) {
+      background-color: #efefef;
+    }
+  </style>

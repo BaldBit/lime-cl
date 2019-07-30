@@ -2,13 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import noop from 'lodash-es/noop';
 
-import ButtonContainer from './styled';
+import Loader from '../Loader/Loader';
+import { ButtonContainer, LoaderContainer } from './styled';
 
 const Button = (props) => {
   const { value, mode, size, disabled, loading, fluid, onClick, ...otherProps } = props;
 
   return (
     <ButtonContainer {...otherProps} mode={mode} size={size} disabled={disabled} fluid={fluid} onClick={onClick}>
+      {loading && (
+        <LoaderContainer>
+          <Loader size={size} />
+        </LoaderContainer>
+      )}
       {value}
     </ButtonContainer>
   );

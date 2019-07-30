@@ -1,6 +1,6 @@
 const limeLight = {
   colorPrimaryOne: '#2ace7e',
-  colorSecondaryOne: '#21cddbb',
+  colorSecondaryOne: '#21cddb',
 
   colorLight: '#ffffff',
   colorDark: '#000000',
@@ -22,9 +22,26 @@ const limeLight = {
     borderRadius: {
       regular: '3px',
       big: '5px',
-    }
+    },
+  },
+
+  loader: {
+    width: {
+      regular: '12px',
+      big: '32px',
+    },
+    height: {
+      regular: '12px',
+      big: '32px',
+    },
+    thickness: 2,
+  },
+
+  animation: {
+    fast: '.3',
+    medium: '.5',
+    slow: '.7',
   }
 };
 
 export default limeLight;
-
