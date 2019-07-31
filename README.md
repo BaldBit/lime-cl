@@ -1,68 +1,111 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lime Component Library
 
-## Available Scripts
+Welcome to the Lime component library. We got collection of React components styled with styled-components which you can used for your project.
 
-In the project directory, you can run:
+For the moment we have two components you can use straightaway.
 
-### `npm start`
+- Button
+- Loader
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Button
 
-### `npm test`
+| Prop | Type | Value |
+| ---- | ---- | ----- |
+| `value` | `{string}` | Text to display on the button element
+| `mode` | `{string}('primary' | 'secondary' | 'neutral')` | Set a style for the button
+| `size` | `{string}('regular' | 'big')` | Set a size for the button
+| `disabled` | `{bool}` | Set the disable property for the button element
+| `loading` | `{bool}` | Show the loading component
+| `fluid` | `{bool}` | Stretch the button to it's parent's width
+| `onClick` | `{func}` | The callback function which invoked when click on the button
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Loader
 
-### `npm run build`
+| Prop | Type | Value |
+| ---- | ---- | ----- |
+| `size` | `{string}('regular' | 'big')` | Set a size for the loader
+| `speed` | `{number}` | Set the animation speed
+| `thickness` | `{number}` | Set the thickness of the Loader component
+| `color` | `{string}` | Set the color of the spinning circle
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+We are using following tech stack to develop Lime component library.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- Styled-Components
+- Storybook
+- Jest
+- Enzyme
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To setup the project in your local machine run the following code. That will clone the github repo to your local machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+``` bash
+git clone https://github.com/ryxle/lime-acl.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To install all the dependencies run
 
-## Learn More
+``` bash
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We are using storybook for component development. To start the storybook run the below code in the terminal.
 
-### Code Splitting
+``` bash
+yarn storybook
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Lime Cl project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app). So you can test your components in normal web app also. To run the app you can use below code in the terminal.
 
-### Analyzing the Bundle Size
+``` bash
+yarn start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Implementing components
 
-### Making a Progressive Web App
+All our components are inside the `src/components` folder. We follow the below folder structure for every component.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+``` javascript
+Component
+│
+└─── __test__
+│    │
+│    └─── __snapshots__
+│    │    │
+│    │    └─── component.test.js.snap
+│    │
+│    └─── component.test.js
+│
+└─── Component.jsx
+└─── Component.story.jsx
+└─── styled.js
+```
 
-### Advanced Configuration
+### Testing components
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+We use Jest and Enzyme to test our components.
 
-### Deployment
+To run tests run the below command in the terminal
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+``` bash
+yarn test
+```
 
-### `npm run build` fails to minify
+To update snapshots
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+``` bash
+yarn test:update
+```
+
+## Future
+
+- Need to integrate styled-components theming feature
+- Add more components

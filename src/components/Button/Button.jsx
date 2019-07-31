@@ -27,12 +27,12 @@ Button.propTypes = {
   value: PropTypes.string.isRequired,
   /**
    * Text to display on the button element
-   * @property {string} [mode=primary] - Set style of the button
+   * @property {string} [mode=primary] - Set a style for the button
    */
   mode: PropTypes.oneOf(['primary', 'secondary', 'neutral']),
   /**
    * Text to display on the button element
-   * @property {string} [size=regular] - Set the size of the button
+   * @property {string} [size=regular] - Set a size for the button
    */
   size: PropTypes.oneOf(['regular', 'big']),
   /**
