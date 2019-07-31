@@ -38,9 +38,9 @@ const limeLight = {
   },
 
   animation: {
-    fast: '.3',
-    medium: '.5',
-    slow: '.7',
+    fast: 0.3,
+    medium: 0.5,
+    slow: 0.7,
   }
 };
 

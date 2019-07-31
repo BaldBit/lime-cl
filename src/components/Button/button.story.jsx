@@ -12,7 +12,7 @@ stories.addDecorator(withKnobs);
 stories.add('Default', () => (
   <Button
     value={text('Value', 'Lime Button')}
-    mode={select('Mode', ['primary', 'secondary'], 'primary')}
+    mode={select('Mode', ['primary', 'secondary', 'neutral'], 'primary')}
     size={select('Size', ['regular', 'big'], 'regular')}
     disabled={boolean('Disabled', false)}
     loading={boolean('Loading', false)}

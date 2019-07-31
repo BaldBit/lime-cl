@@ -1,13 +1,697 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<styled.button
+exports[`Render button with fluid prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #2ace7e;
+  border-color: #2ace7e;
+  color: #ffffff;
+}
+
+.c0:focus {
+  outline-color: #6A737B;
+}
+
+.c0:hover {
+  background-color: #26b971;
+  border-color: #26b971;
+}
+
+<Button
   disabled={false}
-  fluid={false}
+  fluid={true}
+  loading={false}
   mode="primary"
   onClick={[Function]}
   size="regular"
+  value="button"
 >
-  button
-</styled.button>
+  <styled.button
+    disabled={false}
+    fluid={true}
+    mode="primary"
+    onClick={[Function]}
+    size="regular"
+  >
+    <StyledComponent
+      disabled={false}
+      fluid={true}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color, 0.3s outline-color;
+
+  &:focus {
+    outline-color: ",
+              "#6A737B",
+              ";
+  }
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="primary"
+      onClick={[Function]}
+      size="regular"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="primary"
+        onClick={[Function]}
+        size="regular"
+      >
+        button
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`Render button with primary mode in disabled state 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #A1A1A1;
+  border-color: #A1A1A1;
+  color: #ffffff;
+}
+
+.c0:focus {
+  outline-color: #6A737B;
+}
+
+<Button
+  disabled={true}
+  fluid={false}
+  loading={false}
+  mode="primary"
+  onClick={[Function]}
+  size="regular"
+  value="button"
+>
+  <styled.button
+    disabled={true}
+    fluid={false}
+    mode="primary"
+    onClick={[Function]}
+    size="regular"
+  >
+    <StyledComponent
+      disabled={true}
+      fluid={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color, 0.3s outline-color;
+
+  &:focus {
+    outline-color: ",
+              "#6A737B",
+              ";
+  }
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="primary"
+      onClick={[Function]}
+      size="regular"
+    >
+      <button
+        className="c0"
+        disabled={true}
+        mode="primary"
+        onClick={[Function]}
+        size="regular"
+      >
+        button
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`Render button with secondary mode 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  border-color: #2ace7e;
+  color: #2ace7e;
+}
+
+.c0:focus {
+  outline-color: #6A737B;
+}
+
+.c0:hover {
+  border-color: #19794a;
+  color: #19794a;
+}
+
+<Button
+  disabled={false}
+  fluid={false}
+  loading={false}
+  mode="secondary"
+  onClick={[Function]}
+  size="regular"
+  value="button"
+>
+  <styled.button
+    disabled={false}
+    fluid={false}
+    mode="secondary"
+    onClick={[Function]}
+    size="regular"
+  >
+    <StyledComponent
+      disabled={false}
+      fluid={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color, 0.3s outline-color;
+
+  &:focus {
+    outline-color: ",
+              "#6A737B",
+              ";
+  }
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="secondary"
+      onClick={[Function]}
+      size="regular"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="secondary"
+        onClick={[Function]}
+        size="regular"
+      >
+        button
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`Render button with secondary mode in disabled state 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  border-color: #A1A1A1;
+  color: #A1A1A1;
+}
+
+.c0:focus {
+  outline-color: #6A737B;
+}
+
+<Button
+  disabled={true}
+  fluid={false}
+  loading={false}
+  mode="secondary"
+  onClick={[Function]}
+  size="regular"
+  value="button"
+>
+  <styled.button
+    disabled={true}
+    fluid={false}
+    mode="secondary"
+    onClick={[Function]}
+    size="regular"
+  >
+    <StyledComponent
+      disabled={true}
+      fluid={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color, 0.3s outline-color;
+
+  &:focus {
+    outline-color: ",
+              "#6A737B",
+              ";
+  }
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="secondary"
+      onClick={[Function]}
+      size="regular"
+    >
+      <button
+        className="c0"
+        disabled={true}
+        mode="secondary"
+        onClick={[Function]}
+        size="regular"
+      >
+        button
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`Render button without a mode (neutral) 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  border-color: #A1A1A1;
+  color: #A1A1A1;
+}
+
+.c0:focus {
+  outline-color: #6A737B;
+}
+
+.c0:hover {
+  border-color: #6e6e6e;
+  color: #6e6e6e;
+}
+
+<Button
+  disabled={false}
+  fluid={false}
+  loading={false}
+  mode="neutral"
+  onClick={[Function]}
+  size="regular"
+  value="button"
+>
+  <styled.button
+    disabled={false}
+    fluid={false}
+    mode="neutral"
+    onClick={[Function]}
+    size="regular"
+  >
+    <StyledComponent
+      disabled={false}
+      fluid={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color, 0.3s outline-color;
+
+  &:focus {
+    outline-color: ",
+              "#6A737B",
+              ";
+  }
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="neutral"
+      onClick={[Function]}
+      size="regular"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="neutral"
+        onClick={[Function]}
+        size="regular"
+      >
+        button
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
+`;
+
+exports[`renders button with primary mode 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  transition: 0.3s border-color,0.3s background-color,0.3s color,0.3s outline-color;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #2ace7e;
+  border-color: #2ace7e;
+  color: #ffffff;
+}
+
+.c0:focus {
+  outline-color: #6A737B;
+}
+
+.c0:hover {
+  background-color: #26b971;
+  border-color: #26b971;
+}
+
+<Button
+  disabled={false}
+  fluid={false}
+  loading={false}
+  mode="primary"
+  onClick={[Function]}
+  size="regular"
+  value="button"
+>
+  <styled.button
+    disabled={false}
+    fluid={false}
+    mode="primary"
+    onClick={[Function]}
+    size="regular"
+  >
+    <StyledComponent
+      disabled={false}
+      fluid={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: inline-flex;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  outline: 1px dotted transparent;
+  outline-offset: 2px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s border-color, 0.3s background-color, 0.3s color, 0.3s outline-color;
+
+  &:focus {
+    outline-color: ",
+              "#6A737B",
+              ";
+  }
+
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="primary"
+      onClick={[Function]}
+      size="regular"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="primary"
+        onClick={[Function]}
+        size="regular"
+      >
+        button
+      </button>
+    </StyledComponent>
+  </styled.button>
+</Button>
 `;
