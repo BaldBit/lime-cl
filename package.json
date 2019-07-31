@@ -1,17 +1,20 @@
 {
-  "name": "my-app",
+  "name": "lime-cl",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/lime-acl.min.js",
+  "private": false,
   "dependencies": {
+    "lime-cl": "^0.1.0",
     "polished": "^3.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rollup -c -o dist/lime-acl.min.js",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!lodash-es)/\" --coverage --watchAll=false",
     "test:update": "react-scripts test --transformIgnorePatterns \"node_modules/(?!lodash-es)/\" --coverage --watchAll=false --updateSnapshot",
     "eject": "react-scripts eject",
@@ -58,6 +61,7 @@
     "@storybook/addon-storysource": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "babel-plugin-styled-components": "^1.10.6",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
@@ -69,6 +73,9 @@
     "eslint-plugin-react": "^7.14.3",
     "jest-styled-components": "^6.3.3",
     "lodash-es": "^4.17.15",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-uglify": "^6.0.2"
   }
 }
