@@ -1,4 +1,11 @@
 <style>
+  :root {
+    --color-primary-one: #2ace7e;
+    --color-primary-one-dark: #017e41;
+
+    --color-light: #ffffff;
+  }
+
   body {
     background: #fff !important;
   }
@@ -8,5 +15,73 @@
     height: 100% !important;
     left: auto !important;
     right: 0;
+  }
+
+  #root > div > div:nth-last-child(2) {
+    background-color: var(--color-primary-one);
+  }
+
+  #root .sidebar-item {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  #root .sidebar-item .sidebar-svg-icon {
+    width: 13px;
+    height: 13px;
+    color: #fff;
+  }
+
+  #root .sidebar-item.selected {
+    background-color: var(--color-light);
+    color: var(--color-primary-one);
+  }
+
+  #root .sidebar-item.selected .sidebar-svg-icon {
+    color: var(--color-primary-one);
+  }
+
+  #root .sidebar-expander {
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    margin-right: 10px;
+  }
+
+  #root .sidebar-header + div > form {
+    border-bottom: 0;
+  }
+
+  #root .sidebar-header + div > form svg {
+    color: var(--color-light);
+    left: 13px;
+  }
+
+  #root .sidebar-header + div > form svg path {
+    opacity: 1!important;
+  }
+
+  #root .sidebar-header + div > form input {
+    border: 1px solid var(--color-light);
+    border-radius: 20px;
+    padding: 5px 15px 5px 35px;
+  }
+
+  #root .sidebar-header + div > form input::placeholder {
+    color: var(--color-light);
+    opacity: 1;
+  }
+
+  #root .sidebar-header + div > form input:-ms-input-placeholder {
+    color: var(--color-light);
+  }
+
+  #root .sidebar-header + div > form input::-ms-input-placeholder {
+    color: var(--color-light);
   }
 </style>
